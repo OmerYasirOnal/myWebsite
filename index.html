@@ -1,359 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--========== Remixicons ==========-->
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-    <!--============= CSS =============-->
-        <title>Portfolio Website</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ömer Yasir ÖNAL - Portfolio</title>
+  <!-- Remixicon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <!--========== Header ==========-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#home" class="nav__link active-link">Hello</a>
-                    </li>
+  <!--========== Header ==========-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Home</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#resume" class="nav__link">Resume</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="#blog" class="nav__link">Blog</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-fill"></i>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-fill"></i>
+      </div>
+    </nav>
+  </header>
 
-                    <li>
-                        <a href="#services" class="nav__link">Services</a>
-                    </li>
+  <!--========== Main ==========-->
+  <main class="main">
+    <!--========== Home Section ==========-->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <img src="assets/img/profile.png" alt="Profile Image" class="home__img" />
+        <div class="home__data">
+          <h1 class="home__name">Ömer Yasir ÖNAL</h1>
+          <p class="home__work">Software Developer</p>
+          <dl class="home__list">
+            <dt>AGE:</dt>
+            <dd>22</dd>
+            <dt>PHONE:</dt>
+            <dd>+90 532 309 02 61</dd>
+            <dt>EMAIL:</dt>
+            <dd>engomeryasironal@gmail.com</dd>
+            <dt>ADDRESS:</dt>
+            <dd>Istanbul/Turkey</dd>
+          </dl>
+          <div class="home__socials">
+            <a href="https://github.com/OmerYasirOnal" target="_blank" class="home__social-link">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/%C3%B6mer-yasir-%C3%B6nal/" target="_blank" class="home__social-link">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://medium.com/@engomeryasironal" target="_blank" class="home__social-link">
+              <i class="ri-medium-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <li>
-                        <a href="#resume" class="nav__link">Resume</a>
-                    </li>
+    <!--========== Introduction Section ==========-->
+    <section class="hello section container">
+      <h2 class="section__title">Hi, I'm Ömer</h2>
+      <p class="hello__details text-lg">
+        Ömer Yasir ÖNAL, a dedicated third-year Computer Engineering student at Fatih Sultan Mehmet Vakif University. I have gained proficiency in programming languages such as Python, Java, C, and C++, and I specialize in developing mobile and web applications using frameworks like Flutter and Swift.
+        <br><br>
+        I am passionate about backend development with Node.js and thoroughly enjoy managing the complete application development process. I see every challenge as an opportunity to learn, and I love solving problems by researching online and exploring technical blogs.
+        <br><br>
+        My interests also extend to machine learning and artificial intelligence—I developed a TÜBİTAK research project that employed advanced models like XGBoost and Random Forest for structural health monitoring. I actively update my skills through certifications and self-directed projects to integrate modern technology with practical solutions.
+        <br><br>
+        Moreover, I closely follow the latest advancements in AI and chatbots. Leveraging these innovative tools has boosted my development efficiency by up to ten times. I believe that as these AI systems evolve and start developing applications based on our instructions, their integration into my workflow will enhance my project development process.
+      </p>
+      <a href="assets/img/Omer-Yasir-Onal.pdf" class="button button--flex text-sm" style="margin-top: 20px;">
+        <i class="ri-download-line"></i> DOWNLOAD CV
+      </a>
+    </section>
 
-                    <li>
-                        <a href="#portfolio" class="nav__link">Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a href="#blog" class="nav__link">Blog</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-fill"></i>
-                </div>
+    <!--========== Services Section ==========-->
+    <section class="services section container" id="services">
+      <h2 class="section__title">Services</h2>
+      <div class="services__container grid">
+        <div class="services__item">
+          <div class="icon__box">
+            <i class="ri-macbook-line"></i>
+            <div class="services__dot">
+              <span class="dot"></span>
             </div>
+          </div>
+          <h3 class="services__title text-lg">Web & Desktop Development</h3>
+          <p class="services__detail">
+            Modern web solutions and desktop applications with a focus on clean design.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <i class="ri-code-line"></i>
+          </div>
+          <h3 class="services__title text-lg">Mobile App Development</h3>
+          <p class="services__detail">
+            Cross-platform mobile applications using Flutter and Swift.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <i class="ri-settings-4-line"></i>
+          </div>
+          <h3 class="services__title text-lg">UI/UX Design</h3>
+          <p class="services__detail">
+            User-centered designs to enhance digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-fill"></i>
-            </div>
-        </nav>
-    </header>
-    <!--========== Main ==========-->
-    <main class="main">
-        <!--========== Home ==========-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/profile.png" alt="" class="home__img" />
-                <div class="home__data">
-                    <h1 class="home__name">Ömer Yasir ÖNAL</h1>
-                    <p class="home__work">Mobil Devoloper, Flutter-Swift</p>
-                    <dl class="home__list">
-                        <dt>AGE:</dt>
-                        <dd>21</dd>
-                        <dt>PHONE:</dt>
-                        <dd>+90 531 734 61 81</dd>
-                        <dt>EMAIL:</dt>
-                        <dd>engomeryasironal@gmail.com</dd>
-                        <dt>ADDRESS:</dt>
-                        <dd>TesttestestesTesttestestesTesttestestesTesttestestes</dd>
-                    </dl>
-                    <div class="home__socials">
-                        <a href="https://github.com/OmerYasirOnal" target=""_blank class="home__social-link">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/%C3%B6mer-yasir-%C3%B6nal/" target=""_blank class="home__social-link">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                        <a href="" target=""_blank class="home__social-link">
-                            <i class="ri-instagram-fill"></i>   
-                        <a href="https://medium.com/@engomeryasironal" target=""_blank class="home__social-link">
-                            <i class="ri-medium-fill"></i>  
-                    </div>
-                </div>
-            </div>
+    <!--========== Resume Section ==========-->
+    <section class="section container" id="resume">
+      <h2 class="section__title">Resume</h2>
+      <div class="resume__container grid">
+        <!-- Education -->
+        <div class="resume__data">
+          <h3 class="resume__title text-sm">EDUCATION</h3>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-sm">FATIH SULTAN MEHMET VAKIF ÜNIVERSİTESİ</h3>
+            <p class="resume__date text-sm">2021 - 2026</p>
+            <p class="resume__description text-lg">
+              B.Sc. in Computer Engineering <br />
+              GPA: 2.83
+            </p>
+          </div>
+        </div>
+        <!-- Experience & Research -->
+        <div class="resume__data">
+          <h3 class="resume__title text-sm">EXPERIENCE & RESEARCH</h3>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-sm">TÜBİTAK - RESEARCHER</h3>
+            <p class="resume__date text-sm">2023</p>
+            <p class="resume__description text-lg">
+              Conducted a TÜBİTAK 2209-A University Students Research Project on measuring concrete performance of earthquake risky structures with an AI-based monitoring system using XGBoost and Random Forest.
+            </p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-sm">FREELANCE - SOFTWARE ENGINEER</h3>
+            <p class="resume__date text-sm">2024</p>
+            <p class="resume__description text-lg">
+              Developed and launched websites for various clients. Managed Google Ads campaigns and implemented SEO strategies to boost online visibility and conversions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
-
-        <!--========== Hello ==========-->
-        <section class="hello section container">
-                <h2 class="section__title" style="cursor: default;">
-                    Hi_
-                </h2>
-                <p class="hello__details text-lg" style="cursor: default;">
-                    He completed his high school education at Birikim College Anatolian High School and continues his education at Fatih Sultan Mehmet University. He set out to contribute to science and humanity. He is currently learning React Native, Java, and Flutter to improve himself.
-                </p>
-                <a href="assets/img/Omer-Yasir-Onal.pdf" class="button button--flex text-sm" style="margin-top: 20px;">
-                    <i class="ri-download-line"></i> DOWNLOAD CV
-                </a>
-        </section>
-        <!--========== Services ==========-->
-        <section class="services section container" id="services">
-            <h2 class="section__title">Services_</h2>
-
-            <div class="services__container grid"> 
-                <div class="services__item">
-                    <div class="icon__box">
-                        <i class="ri-macbook-line"></i>
-                        <div class="services__dot">
-                            <span class="dot"> </span>
-                        </div>
-                    </div>
-                    <h3 class="services__title test-lg">WEB DESİGN</h3>
-                    <p class="services__detail">WEB DESİGNtestestest</p>
-                </div>
-                <div class="services__item">
-                    <div class="icon__box">
-                        <i class="ri-macbook-line"></i>
-                    </div>
-                    <h3 class="services__title test-lg">WEB DESİGN</h3>
-                    <p class="services__detail">WEB DESİGNtestestest</p>
-                </div>
-                <div class="services__item">
-                    <div class="icon__box">
-                        <i class="ri-macbook-line"></i>
-                    </div>
-                    <h3 class="services__title test-lg">WEB DESİGN</h3>
-                    <p class="services__detail">WEB DESİGNtestestest</p>
-                </div>
-            </div>
-        </section>
-        <!--========== Resume ==========-->
-        <section class="section container" id="resume">
-            <h2 class="section__title">
-                Resume_
-            </h2>
-
-            <div class="resume__container grid">
-                <div class="resume__data">
-
-                <h3 class="resume__title test-sm">EDUCATİON</h3>
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-  
-            </div>
-
-            <div class="resume__data">
-
-                <h3 class="resume__title test-sm">EMPLOYMENT</h3>
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-
-                <div class="resume__item">
-                    <h3 class="resume__subtitle test-sm">
-                        FATİH SULTAN MEHMET VAKIF UNIVERSITY
-                    </h3>
-                    <p class="resume__date test-sm">2021-2026</p>
-                    <p class="resume_description test-lg">Bachelor of Science in Computer Engineering                    </p>
-                </div>
-  
-            </div>
-            </div>
-        </section>
-        <!--========== Skills ==========-->
-        <section class="section container">
-            <h2 class="section__title">Skills_</h2>
-            <div class="skills__container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title text-sm">FRONTEND</h3>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <p class="skills__name text-sm">HTML</p>
-                                <span class="skills__number text-sm">90%</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage" style="width: 90%"></span>
-                            </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__titles">
-                            <p class="skills__name text-sm">CSS</p>
-                            <span class="skills__number text-sm">80%</span>
-                        </div>
-
-                        <div class="skills__bar">
-                            <span class="skills__percentage" style="width: 80%"></span>
-                        </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__titles">
-                        <p class="skills__name text-sm">JAVASCRİPT</p>
-                        <span class="skills__number text-sm">60%</span>
-                    </div>
-
-                    <div class="skills__bar">
-                        <span class="skills__percentage" style="width: 60%"></span>
-                    </div>
+    <!--========== Skills Section ==========-->
+    <section class="section container" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills__container grid">
+        <!-- Mobile & Frontend Skills -->
+        <div class="skills__content">
+          <h3 class="skills__title text-sm">Mobile & Frontend</h3>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Flutter</p>
+                <span class="skills__number text-sm">90%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 90%"></span>
+              </div>
             </div>
             <div class="skills__data">
-                <div class="skills__titles">
-                    <p class="skills__name text-sm">REACT</p>
-                    <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 85%"></span>
-                </div>
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Swift</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 70%"></span>
+              </div>
+            </div>
+          </div>
         </div>
-                    </div>
-                </div>
-                <div class="skills__content">
-                    <h3 class="skills__title text-sm">BACKEND</h3>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <p class="skills__name text-sm">HTML</p>
-                                <span class="skills__number text-sm">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage" style="width: 90%">
-                                    
-                                </span>
-                            </div>
-                        </div>
-                    <div class="skills__data">
-                        <div class="skills__titles">
-                            <p class="skills__name text-sm">CSS</p>
-                            <span class="skills__number text-sm">80%</span>
-                        </div>
-
-                        <div class="skills__bar">
-                            <span class="skills__percentage" style="width: 80%"></span>
-                        </div>
-                    </div>
-                <div class="skills__data">
-                    <div class="skills__titles">
-                        <p class="skills__name text-sm">JAVASCRİPT</p>
-                        <span class="skills__number text-sm">60%</span>
-                    </div>
-
-                    <div class="skills__bar">
-                        <span class="skills__percentage" style="width: 60%"></span>
-                    </div>
+        <!-- Backend & Programming Skills -->
+        <div class="skills__content">
+          <h3 class="skills__title text-sm">Backend & Programming</h3>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Node.js</p>
+                <span class="skills__number text-sm">75%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 75%"></span>
+              </div>
             </div>
             <div class="skills__data">
-                <div class="skills__titles">
-                    <p class="skills__name text-sm">REACT</p>
-                    <span class="skills__number text-sm">85%</span>
-                </div>
-
-                <div class="skills__bar">
-                    <span class="skills__percentage" style="width: 85%"></span>
-                </div>
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Python</p>
+                <span class="skills__number text-sm">60%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 60%"></span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Java</p>
+                <span class="skills__number text-sm">85%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 85%"></span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">C/C++</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width: 70%"></span>
+              </div>
+            </div>
+          </div>
         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <!--========== Projects ==========-->
-        <section class="work section container" id="portfolio">
-            <h2 class="section__title">Word_</h2>
+    <!--========== Portfolio Section ==========-->
+    <section class="work section container" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <!-- Category Buttons -->
+      <div class="project__categories">
+        <button class="category__btn text-xs active-work" data-category="all">ALL</button>
+        <button class="category__btn text-xs" data-category="mobile">MOBILE</button>
+        <button class="category__btn text-xs" data-category="desktop">DESKTOP</button>
+        <button class="category__btn text-xs" data-category="university">UNIVERSITY</button>
+        <button class="category__btn text-xs" data-category="freelance">FREELANCE</button>
+      </div>
+      <!-- Projects Container -->
+      <div class="projects__container grid">
+        <!--=== MOBILE PROJECTS ===-->
+        <div class="project__item grid" data-category="mobile">
+          <div class="project__data">
+            <h3 class="project__title text-lg">University Grade Calculator</h3>
+            <p class="project__description">
+              A mobile app developed with Flutter to help students calculate and predict their university grades, featuring Firebase Firestore integration.
+            </p>
+            <ul class="tags text-sm">
+              <li>Flutter</li>
+              <li>Firebase</li>
+              <li>Mobile</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="mobile">
+          <div class="project__data">
+            <h3 class="project__title text-lg">ArtFlare - OpenAI API Integration</h3>
+            <p class="project__description">
+              Generates images from text using OpenAI's DALL-E 2 API, with built-in Google AdMob integration.
+            </p>
+            <ul class="tags text-sm">
+              <li>Flutter</li>
+              <li>OpenAI</li>
+              <li>AdMob</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="mobile">
+          <div class="project__data">
+            <h3 class="project__title text-lg">UniSum – Academic Performance Management</h3>
+            <p class="project__description">
+              An iOS application built with Swift for real-time GPA tracking and predictive analysis, powered by a Node.js backend.
+            </p>
+            <ul class="tags text-sm">
+              <li>Swift</li>
+              <li>Node.js</li>
+              <li>iOS</li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="project__categories">
-                <button class="category__btn text-xs active-work">ALL</button>
-                <button class="category__btn text-xs">MOBİLE APPS</button>
-                <button class="category__btn text-xs">WEB-SITES</button>
-                <button class="category__btn text-xs">LANDING PAGES</button>
+        <!--=== DESKTOP PROJECTS ===-->
+        <div class="project__item grid" data-category="desktop">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Experiment-Material Tracking System</h3>
+            <p class="project__description">
+              A Java Swing application for managing laboratory experiment materials, featuring MySQL database integration.
+            </p>
+            <ul class="tags text-sm">
+              <li>Java</li>
+              <li>Swing</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="desktop">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Python - Food Classification System</h3>
+            <p class="project__description">
+              Classifies Turkish cuisine images into 10 categories using CNN (MobileNetV2) and XGBoost.
+            </p>
+            <ul class="tags text-sm">
+              <li>Python</li>
+              <li>CNN</li>
+              <li>XGBoost</li>
+            </ul>
+          </div>
+        </div>
 
-            </div>
+        <!--=== UNIVERSITY PROJECTS ===-->
+        <div class="project__item grid" data-category="university">
+          <div class="project__data">
+            <h3 class="project__title text-lg">C - Advanced Student &amp; Course Management</h3>
+            <p class="project__description">
+              A C language project managing student and course data using primary data structures.
+            </p>
+            <ul class="tags text-sm">
+              <li>C</li>
+              <li>Data Structures</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="university">
+          <div class="project__data">
+            <h3 class="project__title text-lg">C++ - Complex Number Linear Algebra System</h3>
+            <p class="project__description">
+              Provides linear algebra operations on complex numbers with support for vectors and matrices.
+            </p>
+            <ul class="tags text-sm">
+              <li>C++</li>
+              <li>Linear Algebra</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="university">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Java - Othello Game</h3>
+            <p class="project__description">
+              A digital implementation of the classic two-player Othello board game, including UI and game logic.
+            </p>
+            <ul class="tags text-sm">
+              <li>Java</li>
+              <li>Game Dev</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="university">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Java - Multi-Player Tombola (Bingo)</h3>
+            <p class="project__description">
+              A multi-linked list implementation in Java for a Tombola (Bingo) game with a custom GUI.
+            </p>
+            <ul class="tags text-sm">
+              <li>Java</li>
+              <li>Data Structures</li>
+              <li>Game Dev</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="university">
+          <div class="project__data">
+            <h3 class="project__title text-lg">TÜBİTAK 2209-A Research Project</h3>
+            <p class="project__description">
+              Measured concrete performance of earthquake risky structures using AI-based monitoring with XGBoost and Random Forest.
+            </p>
+            <ul class="tags text-sm">
+              <li>AI</li>
+              <li>XGBoost</li>
+              <li>Random Forest</li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="projects__container grid">
-                <div class="project__item grid">
-                    <img src="assets/img/project-1.png" alt="" class="project__img">
-                    <div class="project__data">
-                        <h3 class="project__title text-lg">Project 1</h3>
-                        <p class="project__description">Project 1testtest</p>
-                        <h4 class="project__stack text-xs"></h4>
-                            <ul class="tags text-sm">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+        <!--=== FREELANCE PROJECTS (Websites) ===-->
+        <div class="project__item grid" data-category="freelance">
+          <div class="project__data">
+            <h3 class="project__title text-lg">A2 Reklam</h3>
+            <p class="project__description">
+              Visit: <a href="https://www.a2reklam.com" target="_blank">www.a2reklam.com</a>
+            </p>
+            <ul class="tags text-sm">
+              <li>Freelance</li>
+              <li>Web Dev</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="freelance">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Olacakevent</h3>
+            <p class="project__description">
+              Visit: <a href="https://www.olacakevent.com.tr" target="_blank">www.olacakevent.com.tr</a>
+            </p>
+            <ul class="tags text-sm">
+              <li>Freelance</li>
+              <li>Web Dev</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="freelance">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Lotus17 Mimarlik</h3>
+            <p class="project__description">
+              Visit: <a href="https://www.lotus17mimarlik.com" target="_blank">www.lotus17mimarlik.com</a>
+            </p>
+            <ul class="tags text-sm">
+              <li>Freelance</li>
+              <li>Web Dev</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project__item grid" data-category="freelance">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Dilyapi</h3>
+            <p class="project__description">
+              Visit: <a href="https://www.dilyapi.com" target="_blank">www.dilyapi.com</a>
+            </p>
+            <ul class="tags text-sm">
+              <li>Freelance</li>
+              <li>Web Dev</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                            </ul>
+    <!--========== Blog Section ==========-->
+    <section class="blog section container" id="blog">
+        <h2 class="section__title">Blog</h2>
+        <div class="blog__container grid">
+          <article class="blog__item">
+            <h3 class="blog__title">Exploring Design Patterns: Benefits, Importance, and Usage in Flutter - TR/EN</h3>
+            <a href="https://medium.com/@engomeryasironal/exploring-design-patterns-benefits-importance-and-usage-in-flutter-abb57b5cfa1e" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">How to Install Flutter on Mac M1 - TR/EN</h3>
+            <a href="https://medium.com/@engomeryasironal/how-to-install-flutter-on-mac-m1-59a085a86e7b" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">FlutterFire CLI ile Firebase Entegrasyon Rehberi - TR</h3>
+            <a href="https://medium.com/@engomeryasironal/flutterfire-cli-ile-firebase-entegrasyon-rehberi-5a3ff878f6a0" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">NOSQL ve SQL Veritabanları - TR</h3>
+            <a href="https://medium.com/@engomeryasironal/nosql-ve-sql-veritabanlar%C4%B1-969bf8f07e67" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">API ve WEB Servis Nedir? - TR</h3>
+            <a href="https://medium.com/@engomeryasironal/api-ve-web-servis-nedir-5ef46e0fbc76" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">IOS Mobil Uygulama Geliştirme Nedir? - TR</h3>
+            <a href="https://medium.com/@engomeryasironal/ios-mobil-uygulama-geli%C5%9Ftirme-nedir-97030b3e8451" target="_blank" class="blog__link">Read More</a>
+          </article>
+          <article class="blog__item">
+            <h3 class="blog__title">Bir Otomotive Entegre Olabilecek Yazılım Uygulamalar - TR</h3>
+            <a href="https://medium.com/@engomeryasironal/bir-otomotive-entegre-olabilecek-yaz%C4%B1l%C4%B1m-uygulamalar-2f2b78430a38" target="_blank" class="blog__link">Read More</a>
+          </article>
+        </div>
+      </section>
+  </main>
 
-                        
-                </div>
-            </div>
-        </section>
-        </main>
-
-
-        <!--========== Js ==========-->
-
-    <script src="assets/js/script.js"></script>
+  <!--========== JS ==========-->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
